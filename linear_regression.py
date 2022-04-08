@@ -39,8 +39,8 @@ class LinearRegression:
     
     
     def accuracy(self, y_test, y_pred):
-        rss = sum((y_test - y_pred) ** 2)
-        tss = sum((y_test - np.mean(y_test)) ** 2)
+        rss = np.sum((y_test - y_pred) ** 2)
+        tss = np.sum((y_test - np.mean(y_test)) ** 2)
         
         r_squared = 1 - (rss / tss)
         return r_squared
