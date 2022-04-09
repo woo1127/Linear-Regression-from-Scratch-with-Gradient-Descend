@@ -14,3 +14,4 @@ model.fit(x_train, y_train)
 y_pred = model.predict(x_test)
 
 print(model.accuracy(y_test, y_pred))
+model.visualization()
